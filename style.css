@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+/* CABEÇALHO */
+header {
+    width: 100%;
+    height: 80px;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: white;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 30px;
+    height: 35px;
+}
+
+.logo h2 {
+    font-size: 20px;
+}
+
+/* MENU */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* IMAGEM DE FUNDO */
+.inicio {
+    width: 100%;
+    height: 100vh;
+
+    background-color: black;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45),
+                        rgba(0, 0, 0, 0.60)),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScw7STU_wQGpIyuY-eckN3LDtHXgP8SQRJ0F72CbrzaDjsjKoups2cGB4&s=10");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    padding: 40px;
+    color: white;
+}
+
+/* FRASES */
+.texto h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.texto p {
+    font-size: 17px;
+}
+
+/* RODAPÉ */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
