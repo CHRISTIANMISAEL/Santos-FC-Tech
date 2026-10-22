@@ -27,21 +27,30 @@ header {
     color: white;
 }
 
-/* LOGO */
+/* SANTOS FC */
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
+   
 }
-
+/* escudo santos */
 .logo img {
-    width: 30px;
-    height: 35px;
+    width: 45px;
+    height: 50px;
+}
+/* texto*/
+.logo h2 {
+    font-size: 25px;
+    margin: 0;
+}
+/* nav */
+nav {
+display: flex;
+gap: 30px;
 }
 
-.logo h2 {
-    font-size: 20px;
-}
+
 
 /* MENU */
 nav a {
@@ -52,6 +61,10 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+.texto {
+    font-size: 30px;
 }
 
 /* IMAGEM DE FUNDO */
@@ -79,12 +92,13 @@ nav a:hover {
 
 /* FRASES */
 .texto h1 {
-    font-size: 48px;
+    font-size: 40px;
     margin-bottom: 15px;
 }
 
 .texto p {
-    font-size: 17px;
+    font-size: 25px;
+    margin-top: 15px;
 }
 
 /* RODAPÉ */
