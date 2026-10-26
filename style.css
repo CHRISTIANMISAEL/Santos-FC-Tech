@@ -111,11 +111,72 @@ nav a:hover {
     color: lightgray;
 }
 
-/* RODAPÉ */
+/* GERAÇÃO / FAMÍLIA */
+/* SEÇÃO DA FAMÍLIA */
+.geracao {
+    background-color: black;   /* fundo preto */
+    color: white;              /* letras brancas */
+    padding: 100px 48px;       /* espaço por dentro da seção */
+    display: flex;             /* coloca texto e foto lado a lado */
+    align-items: center;       /* alinha os dois no meio, na vertical */
+    gap: 60px;                 /* espaço entre o texto e a foto */
+}
+
+/* TEXTO (lado esquerdo) */
+.familia {
+    flex: 1;                   /* ocupa metade da largura */
+}
+
+.familia h2 {
+    border-top: 3px solid white;   /* linha branca em cima do título */
+    padding-top: 15px;
+    font-size: 46px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.familia h2 span {
+    color: lightgray;          /* a segunda parte do título fica cinza */
+}
+
+.familia p {
+    font-size: 22px;
+    line-height: 1.6;          /* espaço entre as linhas */
+    color: lightgray;
+}
+
+.familia .destaque {
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left: 4px solid white;   /* barra branca ao lado da frase */
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* FOTO (lado direito) */
+.foto-familia {
+    flex: 1;                   /* ocupa a outra metade */
+}
+
+.foto-familia img {
+    width: 100%;               /* a foto ocupa toda a largura da caixa */
+    height: 520px;
+    object-fit: cover;         /* corta o excesso sem deformar a foto */
+    border: 3px solid white;   /* borda branca em volta da foto */
+}
+
+.legenda {
+    margin-top: 15px;          /* espaço entre a foto e a legenda */
+    font-size: 16px;
+    font-style: italic;        /* letra inclinada */
+    color: lightgray;
+}
+/* RODAPÉ  FOOTER */
 footer {
     width: 100%;
     height: 100px;
-    background-color: black;
+    background-color: #141414;
     display: flex;
     justify-content: space-between;
     min-height: 300px;
