@@ -172,6 +172,134 @@ nav a:hover {
     font-style: italic;        /* letra inclinada */
     color: lightgray;
 }
+
+/* socio */
+/* ===================================================
+   ESTILOS DA SEÇÃO SÓCIO REI (HOME)
+   =================================================== */
+
+.socio-section {
+    background-color: #0d0d0d;
+    padding: 60px 20px;
+    width: 100%;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.socio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Título e Texto de Apoio */
+.socio-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.socio-header p {
+    font-size: 16px;
+    color: #b0b0b0;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+}
+
+/* Disposição dos Cards em Linha (Flexbox) */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; /* Garante adaptabilidade em telas menores */
+}
+
+/* Card Individual */
+.card {
+    background-color: #141414;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 35px 25px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 360px;
+    text-align: left;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efeito Hover (ao passar o mouse no card) */
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #c5a059; /* Cor Dourada/Amarela */
+}
+
+.card-icon {
+    font-size: 32px;
+    margin-bottom: 20px;
+    background-color: #1f1f1f;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #333333;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.6;
+}
+
+/* Botão do Plano */
+.btn-container {
+    margin-top: 45px;
+}
+
+.btn-planos {
+    background-color: #c5a059;
+    color: #000000;
+    padding: 14px 36px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-planos:hover {
+    background-color: #e5ba69;
+    transform: scale(1.03);
+}
+
+/* Ajustes para telas de celulares e tablets */
+@media (max-width: 768px) {
+    .socio-header h2 {
+        font-size: 24px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
 /* RODAPÉ  FOOTER */
 footer {
     width: 100%;
