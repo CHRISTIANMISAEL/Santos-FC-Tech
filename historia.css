@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* MENU */
+.topo {
+    min-height: 80px;
+    padding: 18px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 42px;
+    height: 48px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover,
+nav .ativo {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+/* TEXTO PEQUENO ACIMA DOS TÍTULOS */
+.subtitulo {
+    color: #bdbdbd;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+/* CAPA */
+.capa {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 6%;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.45)),
+        url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/d5/f4/9e/vb000000001.jpg?w=1200&h=-1&s=1");
+    background-size: cover;
+    background-position: center;
+}
+
+.capa-texto {
+    max-width: 850px;
+}
+
+.capa h1 {
+    font-size: clamp(38px, 6vw, 72px);
+    line-height: 1.08;
+    margin-bottom: 22px;
+}
+
+.capa h1 span,
+.introducao h2 span,
+.titulo-secao h2 span {
+    color: #bdbdbd;
+}
+
+.capa-texto > p:not(.subtitulo) {
+    color: #ddd;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+/* INTRODUÇÃO */
+.introducao {
+    max-width: 900px;
+    margin: auto;
+    padding: 100px 25px;
+    text-align: center;
+}
+
+.introducao h2 {
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.introducao > p:last-child {
+    max-width: 750px;
+    margin: auto;
+    color: #bbb;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* TÍTULO DAS SEÇÕES */
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.titulo-secao h2 {
+    font-size: clamp(35px, 5vw, 55px);
+}
+
+/* LINHA DO TEMPO */
+.linha-tempo {
+    padding: 50px 6% 100px;
+}
+
+.momento {
+    max-width: 1200px;
+    margin: 0 auto 90px;
+    display: grid;
+    grid-template-columns: 90px 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.ano {
+    font-size: 22px;
+    font-weight: bold;
+    color: #bbb;
+    border-left: 3px solid #777;
+    padding-left: 15px;
+}
+
+.momento img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: 1px solid #333;
+}
+
+.texto-momento h3 {
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.texto-momento > p:not(.subtitulo) {
+    color: #bbb;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.texto-momento a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid #888;
+    padding-bottom: 4px;
+}
+
+/* BLOCOS COM A FOTO NA DIREITA */
+.invertido .ano {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.invertido .texto-momento {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.invertido img {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+/* ÍDOLOS (CARROSSEL) */
+.idolos {
+    padding: 50px 6% 100px;
+    border-top: 1px solid #333;
+}
+
+.carrossel {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.trilho {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    
+}
+
+.trilho::-webkit-scrollbar {
+    display: none;
+}
+
+.idolo {
+    flex: 0 0 calc((100% - 50px) / 3);
+    border: 1px solid #333;
+    background-color: #0f0f0f;
+}
+
+.idolo img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.idolo-texto {
+    padding: 18px 20px 22px;
+}
+
+.idolo-texto h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.idolo-texto > p:not(.subtitulo) {
+    color: #bbb;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* SETAS DO CARROSSEL */
+.seta {
+    position: absolute;
+    top: 130px;
+    z-index: 2;
+    width: 46px;
+    height: 46px;
+    border: 1px solid white;
+    background-color: #080808;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.seta:hover {
+    background-color: white;
+    color: black;
+}
+
+.seta-esq {
+    left: -23px;
+}
+
+.seta-dir {
+    right: -23px;
+}
+
+/* RODAPÉ */
+footer {
+    padding: 35px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: #aaa;
+    font-size: 13px;
+}
+
+footer h3 {
+    color: white;
+}
